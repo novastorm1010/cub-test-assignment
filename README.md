@@ -1,7 +1,7 @@
 # Currency Exchange (Spring Boot + H2)
 
 Features:
-- CRUD APIs for `currencies_exchange_rate` table
+- CRUD APIs for `currencies_exchange_rate` table ([Postman Collection](docs/Test%20Assigment.postman_collection.json))
 - H2 console available at `/h2-console`
 
 1. The request and response body log all API be called and call out external APIs:
