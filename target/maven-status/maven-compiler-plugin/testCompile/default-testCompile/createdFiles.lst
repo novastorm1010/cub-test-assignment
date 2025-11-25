@@ -1,0 +1,3 @@
+com\example\currency\controller\CurrencyControllerTest.class
+com\example\currency\service\CurrencyExchangeRateServiceImpTest.class
+com\example\currency\service\ExternalExchangeServiceImpTest.class

@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "34ba92a0-5f7a-4bdb-914a-228d50978be7",
+		"name": "Test Assigment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29378963"
+	},
+	"item": [
+		{
+			"name": "Query",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/currencies?startDate=2025-03-26&endDate=2025-03-27&baseCurrency=VND",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"currencies"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2025-03-26"
+						},
+						{
+							"key": "endDate",
+							"value": "2025-03-27"
+						},
+						{
+							"key": "baseCurrency",
+							"value": "VND"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"exchangeDate\": \"2025-03-28\",\r\n        \"baseCurrency\": \"VND\",\r\n        \"quoteCurrency\": \"USD\",\r\n        \"closeTime\": \"2025-03-28T23:59:59Z\",\r\n        \"averageBid\": 0.0000390558,\r\n        \"averageAsk\": 0.0000391034,\r\n        \"highBid\": 0.0000390957,\r\n        \"highAsk\": 0.0000391497,\r\n        \"lowBid\": 0.0000389871,\r\n        \"lowAsk\": 0.0000390137\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/currencies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"currencies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modify",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"exchangeDate\": \"2025-03-28\",\r\n    \"baseCurrency\": \"VND\",\r\n    \"quoteCurrency\": \"USD\",\r\n    \"closeTime\": \"2025-03-28T23:59:59Z\",\r\n    \"averageBid\": 0.0000390553,\r\n    \"averageAsk\": 0.0000391033,\r\n    \"highBid\": 0.0000390951,\r\n    \"highAsk\": 0.0000391491,\r\n    \"lowBid\": 0.0000389871,\r\n    \"lowAsk\": 0.0000390131,\r\n    \"updateTime\": \"2025-11-20 08:49:01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/currencies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"currencies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/currencies?exchangeDate=2025-03-26&baseCurrency=VND&quoteCurrency=USD",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"currencies"
+					],
+					"query": [
+						{
+							"key": "exchangeDate",
+							"value": "2025-03-26"
+						},
+						{
+							"key": "baseCurrency",
+							"value": "VND"
+						},
+						{
+							"key": "quoteCurrency",
+							"value": "USD"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
